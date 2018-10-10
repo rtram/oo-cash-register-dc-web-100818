@@ -31,8 +31,8 @@ class CashRegister
   end 
   
   def void_last_transaction
-    self.total -= self.last_item[item_price]
-    binding.pry
+    self.total -= self.last_item["item_price"]
+
   end 
   
 end 
