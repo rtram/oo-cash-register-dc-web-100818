@@ -32,9 +32,7 @@ class CashRegister
   
   def void_last_transaction
     self.total -= self.last_item["item_price"]
-    self.items.collect do |item|
-      if item == self.last_item["item"]
-        
+    self.items.delete()
     binding.pry
   end 
   
