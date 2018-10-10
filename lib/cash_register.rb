@@ -18,7 +18,8 @@ class CashRegister
     end 
         binding.pry
     self.last_item["item"] = item
-    
+    self.last_item["item_price"] = item_price
+    self.last_item["quantity"] = quantity
   end 
   
   def apply_discount
